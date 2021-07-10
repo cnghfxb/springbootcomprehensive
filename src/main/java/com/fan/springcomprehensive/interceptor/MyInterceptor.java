@@ -14,7 +14,6 @@ public class MyInterceptor implements HandlerInterceptor {
        String userId1 =  request.getParameter("userId");
        System.out.println(userId1);
        String userId = request.getHeader("userId");
-       System.out.println(userId);
        if (userId.equals("001") || userId1.equals("001")) {
            result = true;
        }
