@@ -11,6 +11,7 @@ public class MyConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new MyInterceptor())
         .addPathPatterns("/**")
-        .excludePathPatterns("/","/index","/image/**");
+        .excludePathPatterns("/","/index","/image/**","/redis/**");
     }
+
 }
