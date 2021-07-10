@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class Home {
     @RequestMapping(value = "/index")
     public String index() {
-        return "hello world";
+        return "fan xuebig";
     }
 }
